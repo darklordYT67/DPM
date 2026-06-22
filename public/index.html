@@ -2,22 +2,30 @@
 <html>
 <head>
     <title>DPM - DarkProviderMail</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <h1>🌑 DPM</h1>
     <h2>DarkProviderMail</h2>
 
     <p>Fast, secure temporary email service.</p>
 
-    <button>Generate Email</button>
+    <button onclick="generateEmail()">Generate Email</button>
+
+    <p id="email"></p>
 
     <hr>
 
     <p>No signup required.</p>
+
+    <script>
+        function generateEmail() {
+            let random = Math.floor(Math.random() * 100000);
+            document.getElementById("email").innerHTML =
+                "dpm" + random + "@darkprovidermail.com";
+        }
+    </script>
+
 </body>
 </html>
-<link rel="stylesheet" href="styles.css">
-<head>
-    <title>DPM - DarkProviderMail</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
