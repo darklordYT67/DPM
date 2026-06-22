@@ -9,10 +9,16 @@ body {
 h1 {
     color: #9b59ff;
     font-size: 60px;
+    margin-bottom: 10px;
 }
 
 h2 {
     color: #c77dff;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
 }
 
 button {
@@ -20,11 +26,24 @@ button {
     color: white;
     border: none;
     padding: 15px 30px;
-    border-radius: 10px;
     font-size: 18px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 button:hover {
     background-color: #9b59ff;
+}
+
+#email {
+    margin-top: 20px;
+    color: #c77dff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+hr {
+    width: 50%;
+    margin-top: 40px;
+    border: 1px solid #444;
 }
